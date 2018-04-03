@@ -1,0 +1,54 @@
+/* 容器 */
+.container{
+  background-color: #f3f7fa;
+  height: 100%;
+  width: 100%;
+}
+
+/*------------------------*/
+
+/* 趣图 */
+.cartoon {
+  height: 112px;
+  overflow: hidden;
+}
+.cartoon image {
+  height: 90%;
+}
+
+/*------------------------*/
+
+/* 表单 */
+.display_card {
+  width: 92%;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+/*-*/
+.display {
+  width: 100%;
+  height: 52px;
+  border-bottom: 1px #ebeff3;
+  line-height: 52px;
+}
+.form3_title {
+  float: left;
+  display: block;
+  width: 60px;
+  height: 100%;
+  margin-left: 18px;
+  font-size: 15px;
+  color: #000;
+}
+.form3_info {
+  float: left;
+  display: block;
+  font-size: 13px;
+  color: #7f7f81;
+  margin-left: 32px;
+  width: calc(92% - 110px);
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

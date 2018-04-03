@@ -1,0 +1,67 @@
+<!--query.wxml-->
+
+<view class='container'> 
+
+  <!-- 右上角保存信息按钮 -->
+  <view class='save_info'>
+    <label class='save_info_background' bindtap="saveUserInfo"></label>
+    <label><image class='save_info_img'  bindtap="saveUserInfo" src="../../../img/card.png"></image></label>
+    <view class="save_user_title">预存准考证</view>
+  </view>
+
+  <view class='cartoon'> 
+    <image src="../../../img/doodle.png" mode="center"></image>
+  </view>
+
+  <!-- 查询表单 -->
+  <form class='display_card1' bindsubmit="formSubmit" bindreset="formReset">
+    <view class='form1_top'>
+
+      <view class='display'>
+          <label class='form1_icon'><image src="../../../img/subject.png"></image></label>
+          <label class="form1_title">考试科目</label>
+          <view class='form1_input'>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="picker">{{array[index]}}</view>
+            </picker>
+          </view>
+      </view>
+
+      <view class='display'>
+        <label class='form1_icon'><image src="../../../img/idcard.png"></image></label>
+        <label class="form1_title">证件号码</label>
+        <view class='form1_input'>
+          <input name='identitycard' placeholder-class='placeholder' placeholder='请输入15位有效证件号码' value='' />
+        </view>
+      </view>
+
+      <view class='display'>
+        <label class='form1_icon'><image src="../../../img/user.png"></image></label>
+        <label class="form1_title">姓名</label>
+        <view class='form1_input'>
+          <input name='username' placeholder-class='placeholder' placeholder='请输入姓名' value='' />
+        </view>
+      </view>
+
+    </view>
+    
+    <view class='form1_bottom'>
+
+      <view class='display'>
+        <label class='form1_icon'>
+          <image src="../../../img/certification.png" mode="center"></image>
+        </label>
+        <label class="form1_title">验证码</label>
+        <view class='form1_input'>
+          <input name='certification' placeholder-class='placeholder' placeholder='请输入验证码' value='' />
+        </view>
+      </view>
+      
+    </view>
+
+    <view class='form1_btn'>
+        <button formType='submit'>查询</button>
+    </view>
+    
+  </form>
+</view>

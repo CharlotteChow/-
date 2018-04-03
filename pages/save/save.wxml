@@ -1,0 +1,47 @@
+<!--save.wxml-->
+
+<view class="container">
+
+  <view class='cartoon'>
+    <image src="../../../img/doodle.png" mode="center"></image>
+  </view>
+
+  <!-- 保存表单 -->
+  <form class='display_card2' bindsubmit="formSubmit" bindreset="formReset">
+
+    <view class='form2_top'>
+
+      <view class='display'>
+          <label class='form2_icon'><image src="../../../img/subject.png"></image></label>
+          <label class="form2_title">考试科目</label>
+          <view class='form2_input'>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="picker">{{array[index]}}</view>
+            </picker>
+          </view>
+      </view>
+
+      <view class='display'>
+        <label class='form2_icon'><image src="../../../img/idcard.png"></image></label>
+        <label class="form2_title">证件号码</label>
+        <view class='form2_input'>
+          <input name='identitycard'  placeholder-class='placeholder' placeholder='请输入15位有效证件号码' value='' />
+        </view>
+      </view>
+
+      <view class='display'>
+        <label class='form2_icon'><image src="../../../img/user.png"></image></label>
+        <label class="form2_title">姓名</label>
+        <view class='form2_input'>
+          <input name='username'  placeholder-class='placeholder' placeholder='请输入姓名' value='' />
+        </view>
+      </view>
+
+    </view>
+
+    <view class='form2_btn'>
+        <button formType='submit'>保存</button>
+    </view>
+    
+  </form>
+</view>

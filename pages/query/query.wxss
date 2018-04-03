@@ -1,0 +1,125 @@
+/* 容器 */
+.container{
+  background-color: #f3f7fa; 
+  height: 100%;
+  width: 100%;
+}
+
+/*------------------------*/
+
+/* 右上角-预存准考证 */
+.save_info {
+  position: absolute;
+  top: 0;
+  right: 0; 
+  width: 73px;
+  height: 80px;
+}
+.save_info_background {
+	background-color: #ffffff;
+  float: left;
+  margin-top: 18px;
+  margin-left: 20px; 
+  z-index: 98;
+  border-radius: 50%;
+	width: 37px;
+	height: 37px;
+}
+ .save_info_img {
+  position: absolute;
+  top: 25px;
+  left: 27px;
+  z-index: 99;
+  width: 23px;
+  height: 22px;
+} 
+.save_user_title {
+  font-size: 10px;
+  margin-top: 60px;
+  margin-bottom: 3px;
+  text-align: center;
+}
+/*------------------------*/
+
+/* 趣图 */
+.cartoon {
+  height: 112px;
+  overflow: hidden;
+}
+.cartoon image {
+  height: 90%;
+}
+
+/*------------------------*/
+
+/* 表单 */
+.display_card1 {
+  width: 92%;
+}
+.form1_top, .form1_bottom {
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+.form1_bottom {
+  margin-top: 16px;
+}
+/*-*/
+.display {
+  width: 100%;
+  height: 52px;
+  border-bottom: 1px #ebeff3;
+  line-height: 52px;
+}
+/* icon */
+.form1_icon{
+  float: left;
+  width: 40px;
+  height: 100%;
+  line-height: 52px;
+}
+.form1_icon image{
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  margin-top: 16px;
+}
+/*-*/
+/* title */
+.form1_title {
+  float: left;
+  display: block;
+  width: 60px;
+  height: 100%;
+  font-size: 15px;
+  color: #000;
+}
+/* input */
+.form1_input{
+  float: left;
+  display: block;
+  font-size: 13px;
+  color: #7f7f81;
+  margin-left: 24px;
+  width: calc(92% - 124px);
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.form1_input input {
+  height: 52px;
+}
+/* 按钮 */
+.form1_btn {
+  padding-top: 29px;
+}
+.form1_btn button {
+  background-color: #3083c7;
+  margin: 0 auto;
+  height: 43px;
+  line-height: 43px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
